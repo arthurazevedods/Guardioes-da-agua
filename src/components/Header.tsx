@@ -1,13 +1,17 @@
-import React from 'react';
+
 export function Header() {
   return <header className="bg-white shadow-sm sticky top-0 z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="h-8 w-8 text-primary" />
-            <span className="ml-2 text-xl font-bold text-gray-800">
-              OceanGuardians
-            </span>
+            <div className="flex items-center">
+              <img src="/logo.png" alt="Guardiões da água" className="w-24 h-16 m-0"/>
+              <span className="ml-2 text-3xl font-bold text-gray-800">
+                Guardiões da água
+              </span>
+            </div>
+            
           </div>
           <nav className="hidden md:flex space-x-8">
             <a href="#" className="text-gray-600 hover:text-primary">
@@ -17,11 +21,9 @@ export function Header() {
               Artigos
             </a>
             <a href="#" className="text-gray-600 hover:text-primary">
-              Podcast
+              Documentário
             </a>
-            <a href="#" className="text-gray-600 hover:text-primary">
-              Heróis
-            </a>
+           
             <a href="#" className="text-gray-600 hover:text-primary">
               Sobre
             </a>
