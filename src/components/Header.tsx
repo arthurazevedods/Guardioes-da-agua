@@ -14,13 +14,13 @@ export function Header() {
             
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a href="/" className="text-gray-600 hover:text-primary">
               Início
             </a>
             <a href="#" className="text-gray-600 hover:text-primary">
               Artigos
             </a>
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a href="/documentario" className="text-gray-600 hover:text-primary">
               Documentário
             </a>
            

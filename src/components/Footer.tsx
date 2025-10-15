@@ -14,16 +14,10 @@ export function Footer() {
               mares e rios do nosso planeta.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary">
-                <FacebookIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary">
-                <TwitterIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary">
+              <a href="https://www.instagram.com/guardioes.da.agua0/" className="text-gray-400 hover:text-primary">
                 <InstagramIcon className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary">
+              <a href="https://www.youtube.com/@guardioesdaagua0" className="text-gray-400 hover:text-primary">
                 <YoutubeIcon className="h-5 w-5" />
               </a>
             </div>
@@ -101,9 +95,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>info@oceanguardians.org</li>
-              <li>+55 (21) 99999-9999</li>
-              <li>Rio de Janeiro, RJ - Brasil</li>
+              <li>https://www.instagram.com/guardioes.da.agua0/</li>
+              <li>guardioesdaagua0@gmail.com</li>
+              <li>Sao Luis, MA </li>
             </ul>
           </div>
         </div>
