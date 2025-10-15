@@ -7,7 +7,7 @@ export function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <div className="h-8 w-8 text-primary" />
-              <span className="ml-2 text-xl font-bold">OceanGuardians</span>
+              <span className="ml-2 text-xl font-bold">Guardiões da Água</span>
             </div>
             <p className="text-gray-400 mb-6">
               Inspirando e conectando pessoas para a conservação dos oceanos,
@@ -103,7 +103,7 @@ export function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} OceanGuardians. Todos os direitos
+            © {new Date().getFullYear()} Guardiões da Água. Todos os direitos
             reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">

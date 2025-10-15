@@ -6,7 +6,7 @@ export function Header() {
           <div className="flex items-center">
             <div className="h-8 w-8 text-primary" />
             <div className="flex items-center">
-              <img src="/logo.png" alt="Guardiões da água" className="w-24 h-16 m-0"/>
+              <img src="/logo.png" alt="Guardiões da Água" className="w-24 h-16 m-0"/>
               <span className="ml-2 text-3xl font-bold text-gray-800">
                 Guardiões da água
               </span>
@@ -17,7 +17,7 @@ export function Header() {
             <a href="/" className="text-gray-600 hover:text-primary">
               Início
             </a>
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a href="/artigos" className="text-gray-600 hover:text-primary">
               Artigos
             </a>
             <a href="/documentario" className="text-gray-600 hover:text-primary">

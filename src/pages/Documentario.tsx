@@ -5,7 +5,8 @@ export function Documentario(): JSX.Element {
   return (
     <>
         <Header />
-        <section className="flex flex-col items-center gap-8 p-6">
+        <section className="flex flex-col items-center gap-8 p-6 bg-gradient-to-b from-aqua/20 to-white">
+      
             <h1 className="text-3xl font-bold text-center">Documentários - Guardiões da Água</h1>
             
             <p className="text-center max-w-2xl"> 

@@ -15,7 +15,7 @@ const articles = [{
   excerpt: 'Uma história de sucesso na conservação marinha que se tornou referência mundial.',
   category: 'Iniciativas',
   imageUrl: 'https://images.unsplash.com/photo-1591025207163-942350e47db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHVydGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  date: '28 Mai 2023'
+  date: '28 Aug  2023'
 }, {
   id: 3,
   title: 'Os rios amazônicos e seus defensores indígenas',
@@ -37,7 +37,18 @@ const articles = [{
   category: 'Iniciativas',
   imageUrl: 'https://images.unsplash.com/photo-1545671953-0e564e4838a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaGluZyUyMHZpbGxhZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
   date: '25 Abr 2023'
-}];
+},
+
+{
+  id: 6,
+  title: 'gsdgsdfsdfsdfsdades',
+  excerpt: 'Indfsfdfsfsfdfsfsddddddddddddddddddosteiras.',
+  category: 'Iniciativas',
+  imageUrl: '/praiacomlixos2.png',
+  date: '25 Abr 2023'
+}
+
+];
 export function ArticlesSection() {
   const [activeCategory, setActiveCategory] = useState('Todos');
   const filteredArticles = activeCategory === 'Todos' ? articles : articles.filter(article => article.category === activeCategory);
