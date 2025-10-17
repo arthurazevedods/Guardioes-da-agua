@@ -44,6 +44,31 @@ export function Documentario(): JSX.Element {
             >
                 Assista mais no canal oficial Guardiões da Água
             </a>
+
+            <p className="text-center mt-6 font-medium">Outros documentários sobre o assunto</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+                <iframe
+                  className="w-full aspect-video rounded-2xl shadow-lg"
+                  src="https://www.youtube.com/embed/vKALPSF7tbc"
+                  title="Documentário 1"
+                  allowFullScreen
+                ></iframe>
+
+                <iframe
+                  className="w-full aspect-video rounded-2xl shadow-lg"
+                  src="https://www.youtube.com/embed/qc_qsyCHsj0"
+                  title="Documentário 2"
+                  allowFullScreen
+                ></iframe>
+
+                <iframe
+                  className="w-full aspect-video rounded-2xl shadow-lg"
+                  src="https://www.youtube.com/embed/Sf5RtVrg_hw"
+                  title="Documentário 3"
+                  allowFullScreen
+                ></iframe>
+            </div>
         </section>
         <Footer/>
     </>
