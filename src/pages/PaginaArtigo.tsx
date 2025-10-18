@@ -33,7 +33,7 @@ const articles = [
     title: 'Eco Barreiras',
     excerpt: 'Projeto Eco Barreiras - iema axixá',
     category: 'Pesquisa',
-    imageUrl: '/ecobarreiras.png',
+    imageUrl: '/ecobarreira.png',
     date: '17 Out 2024',
     externalUrl: '/artigo',
     isInternal: true,
