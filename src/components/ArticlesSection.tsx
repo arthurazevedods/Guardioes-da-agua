@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArticleCard } from './ArticleCard';
+import { ComingSoon } from './ComingSoon';
 const categories = ['Todos', 'Conservação', 'Heróis', 'Iniciativas', 'Educação', 'Pesquisa'];
 const articles = [{
   id: 1,
@@ -71,8 +72,12 @@ export function ArticlesSection() {
             </button>)}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredArticles.map(article => <ArticleCard key={article.id} title={article.title} excerpt={article.excerpt} category={article.category} imageUrl={article.imageUrl} date={article.date} featured={article.featured} />)}
-      </div>
+      {filteredArticles.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredArticles.map(article => <ArticleCard key={article.id} title={article.title} excerpt={article.excerpt} category={article.category} imageUrl={article.imageUrl} date={article.date} featured={article.featured} />)}
+        </div>
+      ) : (
+        <ComingSoon category={activeCategory} />
+      )}
     </section>;
 }

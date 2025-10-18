@@ -70,15 +70,7 @@ export function Artigos(): JSX.Element {
       ],
       image: "/artigo7.webp",
     },
-    {
-      id: "8",
-      title: "Outro artigo de referência",
-      externalUrl: "https://share.google/pKiGNrsMnGbu0fveA",
-      content: [
-        "Resumo: Referência adicional sobre conservação e boas práticas. Sugestões de leitura complementar e recursos úteis.",
-      ],
-      image: "/artigo8.jpg",
-    },
+    
   ];
 
   return (
