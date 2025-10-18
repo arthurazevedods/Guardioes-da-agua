@@ -17,7 +17,30 @@ const articles = [
       id: '14',
       title: 'AquaRevive: Tecnologia e educação para purificação de água em comunidades',
       date: '17 Out 2024',
-      video: '/aquarevive.mp4',
+      video: 'https://www.youtube.com/embed/9m8Dvc5rLXw',
+      content: [
+        'O AquaRevive é um projeto inovador que busca melhorar a qualidade da água consumida por comunidades que dependem de fontes naturais sem tratamento adequado. Desenvolvido pelos alunos Roberta Emanuelle Pinho da Silva e Daniel Weslley Soares Santos da Silva, sob orientação da professora Karoline Costa Rodrigues, o projeto representa uma solução tecnológica aliada à responsabilidade social.',
+        'Utilizando uma combinação de filtração mecânica, carvão ativado e desinfecção por luz UV-C, o sistema oferece uma solução acessível, eficiente e sustentável para a purificação da água. Esta abordagem multietapas garante a remoção de impurezas físicas, químicas e biológicas, proporcionando água segura para consumo humano.',
+        'Além de apresentar uma alternativa prática para reduzir os riscos de contaminação e doenças de origem hídrica, o projeto também tem um forte caráter educativo. Ele promove a conscientização sobre a importância da preservação dos recursos hídricos e incentiva o engajamento de estudantes e da comunidade em ações voltadas ao cuidado com o meio ambiente.',
+        'Com foco no ODS 6 da Agenda 2030 (Água Potável e Saneamento), o AquaRevive demonstra potencial para ser replicado em outras regiões com desafios semelhantes, unindo tecnologia, ciência e responsabilidade social. O projeto exemplifica como a educação e a inovação podem trabalhar juntas para resolver problemas reais da sociedade.',
+        'A iniciativa representa um modelo de como estudantes podem contribuir ativamente para a solução de problemas ambientais, desenvolvendo não apenas conhecimento técnico, mas também consciência cidadã e compromisso com o desenvolvimento sustentável.'
+      ]
+    }
+  },  
+  {
+    id: 1,
+    title: 'Eco Barreiras',
+    excerpt: 'Projeto Eco Barreiras - iema axixá',
+    category: 'Pesquisa',
+    imageUrl: '/',
+    date: '17 Out 2024',
+    externalUrl: '/artigo',
+    isInternal: true,
+    fullContent: {
+      id: '14',
+    title: 'Eco Barreiras',
+    date: '17 Out 2024',
+    video: 'https://www.youtube.com/embed/agtWwB4okYo',
       content: [
         'O AquaRevive é um projeto inovador que busca melhorar a qualidade da água consumida por comunidades que dependem de fontes naturais sem tratamento adequado. Desenvolvido pelos alunos Roberta Emanuelle Pinho da Silva e Daniel Weslley Soares Santos da Silva, sob orientação da professora Karoline Costa Rodrigues, o projeto representa uma solução tecnológica aliada à responsabilidade social.',
         'Utilizando uma combinação de filtração mecânica, carvão ativado e desinfecção por luz UV-C, o sistema oferece uma solução acessível, eficiente e sustentável para a purificação da água. Esta abordagem multietapas garante a remoção de impurezas físicas, químicas e biológicas, proporcionando água segura para consumo humano.',
