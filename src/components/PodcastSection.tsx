@@ -1,27 +1,3 @@
-import React from 'react';
-import { PlayCircleIcon, ClockIcon } from 'lucide-react';
-const episodes = [{
-  id: 1,
-  title: 'Entrevista com Capitão Paulo: 30 anos navegando pelos oceanos',
-  description: 'Uma conversa com um dos maiores defensores dos mares brasileiros e suas experiências com conservação marinha.',
-  imageUrl: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlYSUyMGNhcHRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  duration: '45 min',
-  date: '15 Jun 2023'
-}, {
-  id: 2,
-  title: 'Tecnologias para limpeza dos oceanos: inovações que estão fazendo a diferença',
-  description: 'Exploramos as mais recentes tecnologias sendo desenvolvidas para combater a poluição marinha.',
-  imageUrl: 'https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9jZWFuJTIwY2xlYW51cHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
-  duration: '38 min',
-  date: '01 Jun 2023'
-}, {
-  id: 3,
-  title: 'Baleias Jubarte: a jornada de recuperação de uma espécie quase extinta',
-  description: 'A história de sucesso da conservação das baleias jubarte e os desafios que ainda persistem.',
-  imageUrl: 'https://images.unsplash.com/photo-1568430462989-44163eb1752f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtcGJhY2slMjB3aGFsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
-  duration: '52 min',
-  date: '18 Mai 2023'
-}];
 export function PodcastSection() {
   return <section className="py-12 bg-gradient-to-r from-aqua/20 to-sand rounded-xl my-12 p-8">
       <div className="flex justify-between items-center mb-8">
@@ -35,44 +11,53 @@ export function PodcastSection() {
           </svg>
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {episodes.map(episode => <div key={episode.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-            <div className="relative">
-              <img src={episode.imageUrl} alt={episode.title} className="w-full h-48 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                <div className="p-4 w-full flex justify-between items-center">
-                  <button className="bg-primary hover:bg-primary/90 transition text-white p-2 rounded-full">
-                    <PlayCircleIcon className="h-6 w-6" />
-                  </button>
-                  <div className="flex items-center text-white">
-                    <ClockIcon className="h-4 w-4 mr-1" />
-                    <span className="text-sm">{episode.duration}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="text-gray-500 text-sm mb-2">{episode.date}</p>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
-                {episode.title}
-              </h3>
-              <p className="text-gray-600">{episode.description}</p>
-            </div>
-            <div className="px-6 pb-6 flex space-x-3">
-              <a href="#" className="text-xs flex items-center text-gray-500 hover:text-primary">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Spotify_logo_without_text.svg" alt="Spotify" className="w-4 h-4 mr-1" />
-                Spotify
-              </a>
-              <a href="#" className="text-xs flex items-center text-gray-500 hover:text-primary">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Podcasts_%28iOS%29.svg" alt="Apple Podcasts" className="w-4 h-4 mr-1" />
-                Apple Podcasts
-              </a>
-              <a href="#" className="text-xs flex items-center text-gray-500 hover:text-primary">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/YouTube_play_button_icon_%282013%E2%80%932017%29.svg" alt="YouTube" className="w-4 h-4 mr-1" />
-                YouTube
-              </a>
-            </div>
-          </div>)}
+      <div className="flex flex-col items-center justify-center py-16 px-4">
+        <div className="text-center max-w-md">
+          {/* Ícone de podcast */}
+          <div className="mb-6">
+            <svg 
+              className="w-16 h-16 mx-auto text-gray-400" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={1.5} 
+                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" 
+              />
+            </svg>
+          </div>
+          
+          {/* Título */}
+          <h3 className="text-2xl font-bold text-gray-700 mb-3">
+            Em breve
+          </h3>
+          
+          {/* Descrição */}
+          <p className="text-gray-500 mb-6 leading-relaxed">
+            Estamos preparando episódios incríveis do podcast "Ondas de Mudança" com conversas inspiradoras sobre conservação marinha, tecnologia sustentável e histórias de quem está fazendo a diferença pelos nossos oceanos.
+          </p>
+          
+          {/* Botão de notificação */}
+          <button className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium">
+            <svg 
+              className="w-5 h-5 mr-2" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M15 17h5l-5 5-5-5h5v-5a7.5 7.5 0 1 0-15 0v5h5l-5 5-5-5h5v-5a10 10 0 1 1 20 0v5z" 
+              />
+            </svg>
+            Me notifique quando estiver pronto
+          </button>
+        </div>
       </div>
     </section>;
 }

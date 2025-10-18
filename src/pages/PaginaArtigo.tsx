@@ -1,6 +1,57 @@
-import React from "react";
+
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+// Importar os artigos do ArticlesSection
+const articles = [
+  {
+    id: 1,
+    title: 'AquaRevive: Tecnologia e educação para purificação de água em comunidades',
+    excerpt: 'Projeto que combina filtração mecânica, carvão ativado e desinfecção UV-C para melhorar a qualidade da água em comunidades carentes.',
+    category: 'Pesquisa',
+    imageUrl: '/',
+    date: '17 Out 2024',
+    externalUrl: '/artigo',
+    isInternal: true,
+    fullContent: {
+      id: '1',
+      title: 'AquaRevive: Tecnologia e educação para purificação de água em comunidades',
+      date: '17 Out 2024',
+      video: '/aquarevive.mp4',
+      content: [
+        'O AquaRevive é um projeto inovador que busca melhorar a qualidade da água consumida por comunidades que dependem de fontes naturais sem tratamento adequado. Desenvolvido pelos alunos Roberta Emanuelle Pinho da Silva e Daniel Weslley Soares Santos da Silva, sob orientação da professora Karoline Costa Rodrigues, o projeto representa uma solução tecnológica aliada à responsabilidade social.',
+        'Utilizando uma combinação de filtração mecânica, carvão ativado e desinfecção por luz UV-C, o sistema oferece uma solução acessível, eficiente e sustentável para a purificação da água. Esta abordagem multietapas garante a remoção de impurezas físicas, químicas e biológicas, proporcionando água segura para consumo humano.',
+        'Além de apresentar uma alternativa prática para reduzir os riscos de contaminação e doenças de origem hídrica, o projeto também tem um forte caráter educativo. Ele promove a conscientização sobre a importância da preservação dos recursos hídricos e incentiva o engajamento de estudantes e da comunidade em ações voltadas ao cuidado com o meio ambiente.',
+        'Com foco no ODS 6 da Agenda 2030 (Água Potável e Saneamento), o AquaRevive demonstra potencial para ser replicado em outras regiões com desafios semelhantes, unindo tecnologia, ciência e responsabilidade social. O projeto exemplifica como a educação e a inovação podem trabalhar juntas para resolver problemas reais da sociedade.',
+        'A iniciativa representa um modelo de como estudantes podem contribuir ativamente para a solução de problemas ambientais, desenvolvendo não apenas conhecimento técnico, mas também consciência cidadã e compromisso com o desenvolvimento sustentável.'
+      ]
+    }
+  },
+  {
+    id: 6,
+    title: 'Cidadãos Guardiões: A força da comunidade na preservação dos oceanos',
+    excerpt: 'Como cidadãos comuns estão se unindo para proteger nossos mares e rios através de ações coletivas e conscientização.',
+    category: 'Iniciativas',
+    imageUrl: '/praiacomlixos2.png',
+    date: '25 Abr 2023',
+    externalUrl: '/PaginaArtigo',
+    isInternal: true,
+    fullContent: {
+      id: '6',
+      title: 'Cidadãos Guardiões: A força da comunidade na preservação dos oceanos',
+      date: '25 Abr 2023',
+      image: '/praiacomlixos2.png',
+      content: [
+        'Em todo o mundo, cidadãos comuns estão se unindo para proteger nossos oceanos e rios. Estes guardiões da água não são cientistas ou políticos, mas pessoas comuns que decidiram agir.',
+        'A força da comunidade tem se mostrado uma das ferramentas mais poderosas na luta pela preservação dos recursos hídricos. Quando pessoas se unem com um objetivo comum, o impacto pode ser transformador.',
+        'Muitas iniciativas começam pequenas: uma pessoa que decide limpar uma praia, um grupo de vizinhos que se organiza para monitorar a qualidade da água local, ou uma comunidade que se mobiliza contra a poluição industrial.',
+        'O que torna esses movimentos especiais é a diversidade de pessoas envolvidas: pescadores, estudantes, aposentados, mães, crianças - todos unidos pela causa comum de proteger a água que sustenta a vida.',
+        'Através de ações coletivas, essas comunidades estão criando mudanças reais e duradouras, provando que cada pessoa pode fazer a diferença na preservação dos nossos recursos hídricos.'
+      ]
+    }
+  }
+];
 
 export type Article = {
   id: string;
@@ -12,20 +63,24 @@ export type Article = {
   content?: string[];
 };
 
-export function PaginaArtigo({
-  article,
-  onBack,
-}: {
-  article: Article | null;
-  onBack: () => void;
-}): JSX.Element {
+export function PaginaArtigo(): JSX.Element {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { id } = useParams();
+  
+  // Buscar artigo via state (navegação interna) ou via ID (acesso direto)
+  const articleFromState = location.state?.article as Article | null;
+  const articleFromId = articles.find(article => article.id === parseInt(id || '0'))?.fullContent;
+  const article = articleFromState || articleFromId;
+
   if (!article) {
     return (
       <>
         <Header />
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <p>Artigo não encontrado.</p>
-          <button onClick={onBack} className="mt-4 px-3 py-2 bg-zinc-200 rounded">
+          <p className="text-sm text-gray-500 mt-2">ID do artigo: {id}</p>
+          <button onClick={() => navigate('/')} className="mt-4 px-3 py-2 bg-zinc-200 rounded">
             Voltar
           </button>
         </main>
@@ -61,12 +116,23 @@ export function PaginaArtigo({
           {article.video && (
             <div className="my-6">
               <div className="relative w-full overflow-hidden rounded-lg bg-zinc-100 aspect-video">
-                <iframe
-                  className="w-full aspect-video rounded-2xl shadow-lg"
-                  src={article.video}
-                  title={article.title}
-                  allowFullScreen
-                />
+                {article.video.includes('.mp4') || article.video.includes('.webm') || article.video.includes('.mov') ? (
+                  <video
+                    className="w-full aspect-video rounded-2xl shadow-lg"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={article.video} type="video/mp4" />
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                ) : (
+                  <iframe
+                    className="w-full aspect-video rounded-2xl shadow-lg"
+                    src={article.video}
+                    title={article.title}
+                    allowFullScreen
+                  />
+                )}
               </div>
             </div>
           )}
@@ -78,17 +144,10 @@ export function PaginaArtigo({
               <p>A ausência de oceanos desencadearia acontecimentos sem precedentes no planeta. Saiba quais impactos seriam esses e por que o naturalista David Attenborough se levantou (uma vez mais) para proteger os mares da Terra.</p>
             )}
 
-            {article.externalUrl && (
-              <p>
-                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Ler artigo completo
-                </a>
-              </p>
-            )}
           </section>
 
           <div className="mt-6">
-            <button onClick={onBack} className="px-4 py-2 rounded bg-zinc-200 hover:bg-zinc-300">
+            <button onClick={() => navigate('/')} className="px-4 py-2 rounded bg-zinc-200 hover:bg-zinc-300">
               Voltar para artigos
             </button>
           </div>

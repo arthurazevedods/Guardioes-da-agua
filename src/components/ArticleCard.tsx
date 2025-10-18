@@ -1,4 +1,3 @@
-import React from 'react';
 interface ArticleCardProps {
   title: string;
   excerpt: string;
@@ -6,6 +5,7 @@ interface ArticleCardProps {
   imageUrl: string;
   date: string;
   featured?: boolean;
+  externalUrl?: string;
 }
 export function ArticleCard({
   title,
@@ -13,7 +13,8 @@ export function ArticleCard({
   category,
   imageUrl,
   date,
-  featured = false
+  featured = false,
+  externalUrl
 }: ArticleCardProps) {
   return <div className={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 ${featured ? 'lg:col-span-2' : ''}`}>
       <div className="relative">
@@ -26,7 +27,15 @@ export function ArticleCard({
         <p className="text-gray-500 text-sm mb-2">{date}</p>
         <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
         <p className="text-gray-600 mb-4">{excerpt}</p>
-        <a href="#" className="inline-flex items-center text-primary font-medium hover:text-primary/90">
+        <a 
+          href={externalUrl || '#'} 
+          className="inline-flex items-center text-primary font-medium hover:text-primary/90"
+          onClick={(e) => {
+            if (externalUrl === '#') {
+              e.preventDefault();
+            }
+          }}
+        >
           Ler artigo completo
           <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
