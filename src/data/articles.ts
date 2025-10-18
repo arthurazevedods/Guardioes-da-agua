@@ -17,7 +17,7 @@ export const articles: Article[] = [
       "Resumo: Relação entre saúde dos oceanos e direitos humanos.",
       "Introdução breve e pontos principais do artigo.",
     ],
-    image: "/public/artigo1.jpeg",
+    image: "/artigo1.jpeg",
   },
   {
     id: "2",
@@ -27,7 +27,7 @@ export const articles: Article[] = [
       "Resumo: Estratégias práticas para reduzir a degradação marinha.",
       "Ações comunitárias, políticas públicas e iniciativas de conservação.",
     ],
-    image: "/public/artigo2.png",
+    image: "/artigo2.png",
   },
   {
     id: "3",
@@ -38,7 +38,7 @@ export const articles: Article[] = [
       "Resumo: Medidas para minimizar a poluição e proteger ecossistemas.",
       "Tecnologias, regulamentações e exemplos de casos de sucesso.",
     ],
-    image: "/public/artigo3.jpg",
+    image: "/artigo3.jpg",
   },
   {
     id: "4",
@@ -48,7 +48,7 @@ export const articles: Article[] = [
       "Resumo: Lista de ações cotidianas para preservar o meio ambiente.",
       "Dicas simples e efetivas que qualquer pessoa pode aplicar hoje.",
     ],
-    image: "/public/artigo4.png",
+    image: "/artigo4.png",
   },
   {
     id: "5",
@@ -59,7 +59,7 @@ export const articles: Article[] = [
       "Resumo: Conexão entre cultura do surf e conservação marinha.",
       "Como comunidades locais podem proteger praias e ecossistemas costeiros.",
     ],
-    image: "/public/artigo5.webp",
+    image: "/artigo5.webp",
   },
   {
     id: "6",
@@ -69,7 +69,7 @@ export const articles: Article[] = [
       "Resumo: Fatos e estatísticas sobre a poluição hídrica global.",
       "Impactos sobre a saúde humana, vida marinha e economia local.",
     ],
-    image: "/public/artigo6.jpg",
+    image: "/artigo6.jpg",
   },
   {
     id: "7",
@@ -80,7 +80,7 @@ export const articles: Article[] = [
       "Resumo: Cenário hipotético dos efeitos da ausência dos oceanos.",
       "Discussão sobre clima, biodiversidade e sobrevivência humana.",
     ],
-    image: "/public/artigo7.webp",
+    image: "/artigo7.webp",
   },
   {
     id: "8",
@@ -90,6 +90,6 @@ export const articles: Article[] = [
       "Resumo: Referência adicional sobre conservação e boas práticas.",
       "Sugestões de leitura complementar e recursos úteis.",
     ],
-    image: "/public/artigo8.jpg",
+    image: "/artigo8.jpg",
   },
 ];
