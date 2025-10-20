@@ -34,7 +34,7 @@ export function Header() {
             <a href="/sobrenos" className="text-gray-600 hover:text-primary">
               Sobre
             </a>
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a href="/contato" className="text-gray-600 hover:text-primary">
               Contato
             </a>
           </nav>
@@ -81,14 +81,14 @@ export function Header() {
                 Documentários
               </a>
               <a 
-                href="#" 
+                href="/sobrenos" 
                 className="text-gray-600 hover:text-primary py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sobre
               </a>
               <a 
-                href="#" 
+                href="/contato" 
                 className="text-gray-600 hover:text-primary py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >

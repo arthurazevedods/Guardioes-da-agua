@@ -1,5 +1,4 @@
-import React from 'react';
-import { FacebookIcon, TwitterIcon, InstagramIcon, YoutubeIcon } from 'lucide-react';
+import { InstagramIcon, YoutubeIcon } from 'lucide-react';
 export function Footer() {
   return <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -26,32 +25,27 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Navegação</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/" className="text-gray-400 hover:text-primary">
                   Início
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos" className="text-gray-400 hover:text-primary">
                   Artigos
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
-                  Podcast
+                <a href="/documentarios" className="text-gray-400 hover:text-primary">
+                  Documentários
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
-                  Heróis
+                <a href="/sobrenos" className="text-gray-400 hover:text-primary">
+                  Sobre Nós
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/contato" className="text-gray-400 hover:text-primary">
                   Contato
                 </a>
               </li>
@@ -61,33 +55,28 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Categorias</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos?categoria=Conservação" className="text-gray-400 hover:text-primary">
                   Conservação
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos?categoria=Heróis" className="text-gray-400 hover:text-primary">
                   Heróis
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos?categoria=Iniciativas" className="text-gray-400 hover:text-primary">
                   Iniciativas
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos?categoria=Educação" className="text-gray-400 hover:text-primary">
                   Educação
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
+                <a href="/artigos?categoria=Pesquisa" className="text-gray-400 hover:text-primary">
                   Pesquisa
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary">
-                  Voluntariado
                 </a>
               </li>
             </ul>
@@ -95,9 +84,18 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>https://www.instagram.com/guardioes.da.agua0/</li>
-              <li>guardioesdaagua0@gmail.com</li>
-              <li>Sao Luis, MA </li>
+              <li>
+                <a href="https://www.instagram.com/guardioes.da.agua0/" className="hover:text-primary">
+                  @guardioes.da.agua0
+                </a>
+              </li>
+              <li>
+                <a href="mailto:guardioesdaagua0@gmail.com" className="hover:text-primary">
+                  guardioesdaagua0@gmail.com
+                </a>
+              </li>
+              <li>São Luís, MA</li>
+              <li>IEMA - Unidade Rio Anil</li>
             </ul>
           </div>
         </div>

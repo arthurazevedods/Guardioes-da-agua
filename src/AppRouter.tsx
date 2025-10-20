@@ -4,6 +4,7 @@ import { Documentario } from "./pages/Documentario";
 import { Artigos } from "./pages/Artigos";
 import { PaginaArtigo } from "./pages/PaginaArtigo";
 import { SobreNos } from "./pages/SobreNos";
+import { Contato } from "./pages/Contato";
 
 export function AppRouter() {
   return <BrowserRouter>
@@ -13,6 +14,7 @@ export function AppRouter() {
             <Route path="/artigos" element={<Artigos/>} />
             <Route path="/artigo/:id" element={<PaginaArtigo />} />
             <Route path="/sobrenos" element={<SobreNos />} />
+            <Route path="/contato" element={<Contato />} />
           </Routes>
       </BrowserRouter>;
 }
