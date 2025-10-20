@@ -31,7 +31,7 @@ export function Header() {
             <a href="/documentarios" className="text-gray-600 hover:text-primary">
               Documentários
             </a>
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a href="/sobrenos" className="text-gray-600 hover:text-primary">
               Sobre
             </a>
             <a href="#" className="text-gray-600 hover:text-primary">

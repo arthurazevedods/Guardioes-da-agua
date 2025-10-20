@@ -30,7 +30,7 @@ const articles = [
   {
     id: 2,
     title: 'Eco Barreiras',
-    excerpt: 'Projeto Eco Barreiras - iema axixá',
+    excerpt: 'As ecobarreiras têm como objetivo reter plásticos e outros materiais antes que atinjam trechos críticos ou o litoral, contribuindo para a melhoria da qualidade da água, conservação da biodiversidade e redução de impactos como assoreamento e contaminação.',
     category: 'Pesquisa',
     imageUrl: '/ecobarreira.png',
     date: '17 Out 2024',
@@ -41,13 +41,13 @@ const articles = [
     title: 'Eco Barreiras',
     date: '17 Out 2024',
     video: 'https://www.youtube.com/embed/agtWwB4okYo',
-      content: [
-        'O AquaRevive é um projeto inovador que busca melhorar a qualidade da água consumida por comunidades que dependem de fontes naturais sem tratamento adequado. Desenvolvido pelos alunos Roberta Emanuelle Pinho da Silva e Daniel Weslley Soares Santos da Silva, sob orientação da professora Karoline Costa Rodrigues, o projeto representa uma solução tecnológica aliada à responsabilidade social.',
-        'Utilizando uma combinação de filtração mecânica, carvão ativado e desinfecção por luz UV-C, o sistema oferece uma solução acessível, eficiente e sustentável para a purificação da água. Esta abordagem multietapas garante a remoção de impurezas físicas, químicas e biológicas, proporcionando água segura para consumo humano.',
-        'Além de apresentar uma alternativa prática para reduzir os riscos de contaminação e doenças de origem hídrica, o projeto também tem um forte caráter educativo. Ele promove a conscientização sobre a importância da preservação dos recursos hídricos e incentiva o engajamento de estudantes e da comunidade em ações voltadas ao cuidado com o meio ambiente.',
-        'Com foco no ODS 6 da Agenda 2030 (Água Potável e Saneamento), o AquaRevive demonstra potencial para ser replicado em outras regiões com desafios semelhantes, unindo tecnologia, ciência e responsabilidade social. O projeto exemplifica como a educação e a inovação podem trabalhar juntas para resolver problemas reais da sociedade.',
-        'A iniciativa representa um modelo de como estudantes podem contribuir ativamente para a solução de problemas ambientais, desenvolvendo não apenas conhecimento técnico, mas também consciência cidadã e compromisso com o desenvolvimento sustentável.'
-      ]
+    content: [
+      'O rio Munim drena uma ampla bacia no Maranhão e enfrenta desafios ambientais associados ao uso do solo, à poluição por resíduos e à retirada de areia. Como parte de estratégias de conservação e mitigação da poluição fluvial, as alunas do curso de Redes de Computadores do IEMA Axixá desenvolveram o projeto de uso de ecobarreiras — estruturas flutuantes instaladas transversalmente em cursos d’água para interceptar resíduos sólidos flutuantes.',
+      'As ecobarreiras têm como objetivo reter plásticos e outros materiais antes que atinjam trechos críticos ou o litoral, contribuindo para a melhoria da qualidade da água, conservação da biodiversidade e redução de impactos como assoreamento e contaminação.',
+      'A técnica foi apresentada aos gestores municipais, que se comprometeram a apoiar o projeto e sua implementação no rio Munim, fortalecendo o diálogo entre escola e poder público em prol da sustentabilidade hídrica.',
+      'A iniciativa evidencia o protagonismo das alunas e a integração entre a escola e a sociedade na promoção de práticas ambientais de preservação e conscientização.',
+      'Alunas envolvidas: Ana Clara Melo de Matos; Aline Cristina Silva e Silva; Melissa Vitória Pires Costa; Glenda Rafiza Sousa Cabral; Jamylly Pereira Sampaio.'
+    ]
     }
   },  
 
@@ -118,15 +118,6 @@ const articles = [
   imageUrl: '/artigo5.webp',
   date: '30 Jan 2024',
   externalUrl: 'https://share.google/yZZLJgJwa5cba0kuO'
-},
-{
-  id: 12,
-  title: '25 factos chocantes sobre a poluição da água',
-  excerpt: 'Fatos e estatísticas sobre a poluição hídrica global e impactos sobre a saúde humana, vida marinha e economia local.',
-  category: 'Pesquisa',
-  imageUrl: '/artigo6.jpg',
-  date: '05 Fev 2024',
-  externalUrl: 'https://share.google/DhIl8ASJ7adNIUEu0'
 },
 {
   id: 13,
