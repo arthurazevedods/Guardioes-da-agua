@@ -170,26 +170,22 @@ export function SobreNos() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Nosso Impacto</h2>
             <p className="text-xl opacity-90">
-              Transformando vidas através da educação e tecnologia
+              Contribuindo para os Objetivos de Desenvolvimento Sustentável da ONU
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">2</div>
-              <div className="text-lg opacity-90">Projetos Implementados</div>
+              <div className="text-4xl font-bold mb-2">ODS 4</div>
+              <div className="text-lg opacity-90">Educação de Qualidade</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">5</div>
-              <div className="text-lg opacity-90">Comunidades Atendidas</div>
+              <div className="text-4xl font-bold mb-2">ODS 11</div>
+              <div className="text-lg opacity-90">Cidades e Comunidades Sustentáveis</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-lg opacity-90">Água Purificada</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">ODS 6</div>
-              <div className="text-lg opacity-90">Objetivo Alcançado</div>
+              <div className="text-4xl font-bold mb-2">ODS 13</div>
+              <div className="text-lg opacity-90">Ação Contra a Mudança Global do Clima</div>
             </div>
           </div>
         </div>
