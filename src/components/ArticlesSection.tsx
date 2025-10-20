@@ -53,24 +53,24 @@ const articles = [
 
   {
   id: 6,
-  title: 'Cidadãos Guardiões: A força da comunidade na preservação dos oceanos',
-  excerpt: 'Como cidadãos comuns estão se unindo para proteger nossos mares e rios através de ações coletivas e conscientização.',
+  title: 'Um mar de consciência: quando pequenas ações fazem grande diferença',
+  excerpt: 'Durante uma manhã ensolarada, Eduane Silva e Maria Luísa participaram de uma ação ambiental em parceria com a Escola de Surf MSV, coordenada pelo professor Welber.',
   category: 'Iniciativas',
   imageUrl: '/praiacomlixos2.png',
-  date: 'Out 2023',
-  externalUrl: '/PaginaArtigo',
+  date: 'Out 2025',
+  externalUrl: '/artigo',
   isInternal: true,
   fullContent: {
     id: '6',
-    title: 'Cidadãos Guardiões: A força da comunidade na preservação dos oceanos',
-    date: 'Out 2023',
+    title: 'Um mar de consciência: quando pequenas ações fazem grande diferença',
+    date: 'Out 2025',
     image: '/praiacomlixos2.png',
     content: [
-      'Em todo o mundo, cidadãos comuns estão se unindo para proteger nossos oceanos e rios. Estes guardiões da água não são cientistas ou políticos, mas pessoas comuns que decidiram agir.',
-      'A força da comunidade tem se mostrado uma das ferramentas mais poderosas na luta pela preservação dos recursos hídricos. Quando pessoas se unem com um objetivo comum, o impacto pode ser transformador.',
-      'Muitas iniciativas começam pequenas: uma pessoa que decide limpar uma praia, um grupo de vizinhos que se organiza para monitorar a qualidade da água local, ou uma comunidade que se mobiliza contra a poluição industrial.',
-      'O que torna esses movimentos especiais é a diversidade de pessoas envolvidas: pescadores, estudantes, aposentados, mães, crianças - todos unidos pela causa comum de proteger a água que sustenta a vida.',
-      'Através de ações coletivas, essas comunidades estão criando mudanças reais e duradouras, provando que cada pessoa pode fazer a diferença na preservação dos nossos recursos hídricos.'
+      'Durante uma manhã ensolarada, Eduane Silva e Maria Luísa participaram de uma ação ambiental em parceria com a Escola de Surf MSV, coordenada pelo professor Welber. Em apenas cinco minutos de coleta, foram recolhidas quatro sacolas cheias de lixo, entre elas garrafas plásticas, embalagens, vidros quebrados e outros materiais descartáveis espalhados pela areia.',
+      'A quantidade e o tipo de resíduos encontrados evidenciaram o impacto negativo do descarte incorreto de lixo nas praias e o risco que isso representa para o meio ambiente, os animais marinhos e os próprios frequentadores. A atividade proporcionou uma reflexão profunda sobre a responsabilidade individual e coletiva na preservação dos oceanos, ressaltando a importância de práticas sustentáveis no cotidiano.',
+      'Mais do que uma simples coleta, a ação simbolizou um ato de cidadania, respeito e compromisso com o planeta. Ao final, ficou a certeza de que pequenas iniciativas, quando unidas, são capazes de gerar grandes transformações e inspirar uma nova consciência ambiental.',
+      'A parceria com a Escola de Surf MSV demonstra como diferentes setores da sociedade podem se unir em prol de um objetivo comum: a preservação dos nossos recursos hídricos e a conscientização sobre a importância de cuidar do meio ambiente.',
+      'Por: Eduane Silva e Maria Luísa'
     ]
   }
 },
