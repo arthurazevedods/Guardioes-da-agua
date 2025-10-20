@@ -113,23 +113,30 @@ export function Contato(): JSX.Element {
               </div>
             </div>
 
-            {/* Horários de Atendimento */}
-            <div className="bg-blue-50 p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Horários de Atendimento</h3>
-              <div className="space-y-2 text-gray-700">
-                <p><strong>Segunda a Sexta:</strong> 8h às 17h</p>
-                <p><strong>Sábado:</strong> 8h às 12h</p>
-                <p><strong>Domingo:</strong> Fechado</p>
-              </div>
-              <p className="text-sm text-gray-600 mt-3">
-                * Horários podem variar durante períodos de férias escolares
-              </p>
-            </div>
+            
           </div>
 
           {/* Formulário de Contato */}
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Envie uma Mensagem</h2>
+            <div className="flex items-center justify-between">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6">Envie uma Mensagem</h2>
+                <button className="inline-flex items-center px-4 py-2 mb-6 bg-primary text-white rounded-md hover:bg-primary/90 font-normal shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-200 text-sm">
+                    <svg 
+                    className="w-4 h-4 mr-1.5" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                    >
+                    <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" 
+                    />
+                    </svg>
+                    Em breve
+                </button>    
+            </div>
             
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -202,14 +209,13 @@ export function Contato(): JSX.Element {
               </button>
             </form>
 
-            {/* Mensagem que aparece quando clicado */}
-            {showMessage && (
-              <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                <p className="text-yellow-800 text-sm">
-                  📧 O formulário de contato ainda não está em funcionamento. Em breve você poderá enviar mensagens diretamente através do site!
-                </p>
-              </div>
-            )}
+            
+            <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+            <p className="text-yellow-800 text-sm">
+                📧 O formulário de contato ainda não está em funcionamento. Em breve você poderá enviar mensagens diretamente através do site!
+            </p>
+            </div>
+            
 
             <p className="text-sm text-gray-600 mt-4 text-center">
               * Campos obrigatórios. Responderemos em até 24 horas.
@@ -249,7 +255,7 @@ export function Contato(): JSX.Element {
                 Como acompanhar as atividades?
               </h3>
               <p className="text-gray-600">
-                Siga-nos no Instagram e YouTube para ficar por dentro de todas as 
+                Siga-nos no Instagram, YouTube e assine nossa Newsletter para ficar por dentro de todas as 
                 nossas atividades e novidades.
               </p>
             </div>
@@ -259,8 +265,7 @@ export function Contato(): JSX.Element {
                 Vocês oferecem palestras ou workshops?
               </h3>
               <p className="text-gray-600">
-                Sim! Oferecemos palestras educativas sobre conservação da água e 
-                meio ambiente. Entre em contato para agendar.
+                Não! Mas estamos sempre abertos a novas ideias e colaborações. Entre em contato para conversar sobre isso.
               </p>
             </div>
           </div>
