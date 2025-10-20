@@ -165,12 +165,7 @@ export function ArticlesSection() {
         </h2>
         <div className="flex items-center gap-4">
         
-          <a href="#" className="text-primary font-medium hover:text-primary/90 flex items-center">
-            Ver todos
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
+          
         </div>
       </div>
       <div className="flex overflow-x-auto pb-4 mb-6 scrollbar-hide">

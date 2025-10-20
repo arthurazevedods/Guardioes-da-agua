@@ -28,7 +28,7 @@ export function Header() {
             <a href="/artigos" className="text-gray-600 hover:text-primary">
               Artigos
             </a>
-            <a href="/documentario" className="text-gray-600 hover:text-primary">
+            <a href="/documentarios" className="text-gray-600 hover:text-primary">
               Documentários
             </a>
             <a href="#" className="text-gray-600 hover:text-primary">
