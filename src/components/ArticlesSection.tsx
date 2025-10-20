@@ -74,60 +74,7 @@ const articles = [
     ]
   }
 },
-{
-  id: 7,
-  title: '5 razões pelas quais um oceano saudável está ligado aos direitos humanos',
-  excerpt: 'Relação entre saúde dos oceanos e direitos humanos. Uma breve introdução e pontos principais.',
-  category: 'Educação',
-  imageUrl: '/artigo1.jpeg',
-  date: '10 Jan 2024',
-  externalUrl: 'https://share.google/cFJ7Fwz05M4I6Z067'
-},
-{
-  id: 8,
-  title: '7 formas de combatermos a degradação do mar',
-  excerpt: 'Estratégias práticas para reduzir a degradação marinha. Ações comunitárias, políticas públicas e iniciativas de conservação.',
-  category: 'Conservação',
-  imageUrl: '/artigo2.png',
-  date: '15 Jan 2024',
-  externalUrl: 'https://share.google/JbK7CVyFb8jNGXs3N'
-},
-{
-  id: 9,
-  title: 'Combate à poluição: práticas para minimizar os impactos ao meio ambiente',
-  excerpt: 'Medidas para minimizar a poluição e proteger ecossistemas. Tecnologias, regulamentações e exemplos de casos de sucesso.',
-  category: 'Conservação',
-  imageUrl: '/artigo3.jpg',
-  date: '20 Jan 2024',
-  externalUrl: 'https://share.google/KoDLv3fixOYSuGdJY'
-},
-{
-  id: 10,
-  title: '18 ações práticas para você agir na Preservação do Meio Ambiente',
-  excerpt: 'Lista de ações cotidianas para preservar o meio ambiente. Dicas simples e efetivas que qualquer pessoa pode aplicar hoje.',
-  category: 'Educação',
-  imageUrl: '/artigo4.png',
-  date: '25 Jan 2024',
-  externalUrl: 'https://share.google/ZyFGmfljeMsYKrpDA'
-},
-{
-  id: 11,
-  title: 'Água e surf: a importância da preservação dos oceanos para a nossa comunidade',
-  excerpt: 'Conexão entre cultura do surf e conservação marinha, como as comunidades locais podem proteger praias e ecossistemas costeiros.',
-  category: 'Heróis',
-  imageUrl: '/artigo5.webp',
-  date: '30 Jan 2024',
-  externalUrl: 'https://share.google/yZZLJgJwa5cba0kuO'
-},
-{
-  id: 13,
-  title: 'O que aconteceria com a Terra se não existissem os oceanos?',
-  excerpt: 'Cenário hipotético dos efeitos da ausência dos oceanos. Discussão sobre clima, biodiversidade e sobrevivência humana.',
-  category: 'Pesquisa',
-  imageUrl: '/artigo7.webp',
-  date: '10 Fev 2024',
-  externalUrl: 'https://share.google/rui9xrUfnpUP4MA4s'
-},
+
 
 ];
 export function ArticlesSection() {
