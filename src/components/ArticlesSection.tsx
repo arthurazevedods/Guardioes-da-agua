@@ -10,13 +10,13 @@ const articles = [
     excerpt: 'Projeto que combina filtração mecânica, carvão ativado e desinfecção UV-C para melhorar a qualidade da água em comunidades carentes.',
     category: 'Pesquisa',
     imageUrl: '/aquarevive.png',
-    date: '17 Out 2024',
+    date: 'Jun 2025',
     externalUrl: '/artigo',
     isInternal: true,
     fullContent: {
       id: '1',
       title: 'AquaRevive: Tecnologia e educação para purificação de água em comunidades',
-      date: '17 Out 2024',
+      date: 'Jun 2025',
       video: 'https://www.youtube.com/embed/9m8Dvc5rLXw',
       content: [
         'O AquaRevive é um projeto inovador que busca melhorar a qualidade da água consumida por comunidades que dependem de fontes naturais sem tratamento adequado. Desenvolvido pela turma 302 do Instituto Federal de Educação, Ciência e Tecnologia do Maranhão - Unidade Axixá e liderado pelos alunos Roberta Emanuelle Pinho da Silva e Daniel Weslley Soares Santos da Silva, sob orientação da professora Karoline Costa Rodrigues, o projeto representa uma solução tecnológica aliada à responsabilidade social.',
@@ -33,13 +33,13 @@ const articles = [
     excerpt: 'As ecobarreiras têm como objetivo reter plásticos e outros materiais antes que atinjam trechos críticos ou o litoral, contribuindo para a melhoria da qualidade da água, conservação da biodiversidade e redução de impactos como assoreamento e contaminação.',
     category: 'Pesquisa',
     imageUrl: '/ecobarreira.png',
-    date: '17 Out 2024',
+    date: 'Jun 2025',
     externalUrl: '/artigo',
     isInternal: true,
     fullContent: {
       id: '2',
     title: 'Eco Barreiras',
-    date: '17 Out 2024',
+    date: 'Jun 2025',
     video: 'https://www.youtube.com/embed/agtWwB4okYo',
     content: [
       'O rio Munim drena uma ampla bacia no Maranhão e enfrenta desafios ambientais associados ao uso do solo, à poluição por resíduos e à retirada de areia. Como parte de estratégias de conservação e mitigação da poluição fluvial, as alunas do curso de Redes de Computadores do IEMA Axixá desenvolveram o projeto de uso de ecobarreiras — estruturas flutuantes instaladas transversalmente em cursos d’água para interceptar resíduos sólidos flutuantes.',
@@ -57,13 +57,13 @@ const articles = [
   excerpt: 'Como cidadãos comuns estão se unindo para proteger nossos mares e rios através de ações coletivas e conscientização.',
   category: 'Iniciativas',
   imageUrl: '/praiacomlixos2.png',
-  date: '25 Abr 2023',
+  date: 'Out 2023',
   externalUrl: '/PaginaArtigo',
   isInternal: true,
   fullContent: {
     id: '6',
     title: 'Cidadãos Guardiões: A força da comunidade na preservação dos oceanos',
-    date: '25 Abr 2023',
+    date: 'Out 2023',
     image: '/praiacomlixos2.png',
     content: [
       'Em todo o mundo, cidadãos comuns estão se unindo para proteger nossos oceanos e rios. Estes guardiões da água não são cientistas ou políticos, mas pessoas comuns que decidiram agir.',
@@ -71,6 +71,29 @@ const articles = [
       'Muitas iniciativas começam pequenas: uma pessoa que decide limpar uma praia, um grupo de vizinhos que se organiza para monitorar a qualidade da água local, ou uma comunidade que se mobiliza contra a poluição industrial.',
       'O que torna esses movimentos especiais é a diversidade de pessoas envolvidas: pescadores, estudantes, aposentados, mães, crianças - todos unidos pela causa comum de proteger a água que sustenta a vida.',
       'Através de ações coletivas, essas comunidades estão criando mudanças reais e duradouras, provando que cada pessoa pode fazer a diferença na preservação dos nossos recursos hídricos.'
+    ]
+  }
+},
+{
+  id: 7,
+  title: 'Biofiltração com Plantas Nativas da Ilha Guarapirá: Uma Alternativa Sustentável para o Tratamento da Água de Lastro no Porto do Itaqui',
+  excerpt: 'Projeto que propõe o desenvolvimento de um sistema de biofiltração natural, inspirado nos manguezais da Ilha Guarapirá, como alternativa sustentável para o tratamento da água de lastro.',
+  category: 'Pesquisa',
+  imageUrl: '/bio.jpeg',
+  date: 'Out 2025',
+  externalUrl: '/artigo',
+  isInternal: true,
+  fullContent: {
+    id: '7',
+    title: 'Biofiltração com Plantas Nativas da Ilha Guarapirá: Uma Alternativa Sustentável para o Tratamento da Água de Lastro no Porto do Itaqui',
+    date: 'Out 2025',
+    image: '/bio.jpeg',
+    content: [
+      'A Ilha Guarapirá, próxima ao Porto do Itaqui (MA), abriga rica biodiversidade em um ecossistema de manguezal essencial para a purificação da água e a retenção de sedimentos. A água de lastro, usada por navios para estabilidade, representa um dos principais vetores de bioinvasão marinha, podendo introduzir espécies invasoras, patógenos e poluentes — como o caramujo africano (Achatina fulica), que ameaça a biodiversidade e a saúde pública.',
+      'O projeto propõe o desenvolvimento de um sistema de biofiltração natural, inspirado nos manguezais da Ilha Guarapirá, como alternativa sustentável para o tratamento da água de lastro. A pesquisa inclui quatro etapas: revisão bibliográfica, visita técnica ao Porto do Itaqui, ensaios laboratoriais com espécies nativas e modelagem de um protótipo digital do biossistema.',
+      'Espera-se que o sistema apresente alta eficiência na remoção de contaminantes e organismos invasores, reduzindo custos e impactos ambientais, além de fortalecer as práticas de gestão portuária sustentável. Assim, o estudo alia ecologia e tecnologia, contribuindo para a conservação ambiental e servindo de referência para outros portos brasileiros.',
+      'A iniciativa representa uma abordagem inovadora que combina conhecimento tradicional sobre manguezais com tecnologia moderna, demonstrando como a natureza pode ser nossa maior aliada na solução de problemas ambientais complexos.',
+      'Este projeto contribui diretamente para os Objetivos de Desenvolvimento Sustentável (ODS) 6 (Água Potável e Saneamento) e 14 (Vida na Água), promovendo práticas sustentáveis na gestão portuária e conservação dos ecossistemas marinhos.'
     ]
   }
 },

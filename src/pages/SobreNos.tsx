@@ -125,9 +125,9 @@ export function SobreNos() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Professor Orientador */}
             <div className="bg-blue-50 p-6 rounded-xl text-center">
-              <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-white">👩‍🏫</span>
-              </div>
+                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl text-white">👨‍🏫</span>
+                </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Prof. Arthur Azevedo da Silva</h3>
               <p className="text-blue-600 font-medium mb-2">Orientadora do Projeto</p>
               <p className="text-gray-600 text-sm">

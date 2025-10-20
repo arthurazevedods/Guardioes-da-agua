@@ -12,12 +12,12 @@ export function HeroSection() {
             e preservando a vida aquática para as futuras gerações.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition duration-300">
+            <a href="/artigos" className="px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition duration-300 inline-block">
               Explorar Artigos
-            </button>
-            <button className="px-6 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition duration-300">
+            </a>
+            <a href="/documentarios" className="px-6 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition duration-300 inline-block">
               Assistir Documentário
-            </button>
+            </a>
           </div>
         </div>
         <div className="rounded-xl overflow-hidden">
