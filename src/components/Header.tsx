@@ -74,7 +74,7 @@ export function Header() {
                 Artigos
               </a>
               <a 
-                href="/documentario" 
+                href="/documentarios" 
                 className="text-gray-600 hover:text-primary py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
