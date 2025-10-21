@@ -129,13 +129,43 @@ export function ArticlesSection() {
           
         </div>
       </div>
-      <div className="flex overflow-x-auto pb-4 mb-6 scrollbar-hide">
-        <div className="flex space-x-2">
-          {categories.map(category => <button key={category} className={`px-4 py-2 rounded-full whitespace-nowrap ${activeCategory === category ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`} onClick={() => setActiveCategory(category)}>
-              {category}
-            </button>)}
-        </div>
-      </div>
+      <div className="mb-6">
+  {/* Mobile: Grid 2x3, Desktop: Flex horizontal */}
+  <div className="grid grid-cols-2 gap-2 sm:hidden">
+    {categories.map(category => (
+      <button 
+        key={category} 
+        className={`px-3 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+          activeCategory === category 
+            ? 'bg-primary text-white shadow-md' 
+            : 'bg-gray-100 text-gray-600 hover:bg-gray-200 active:bg-gray-300'
+        }`} 
+        onClick={() => setActiveCategory(category)}
+      >
+        {category}
+      </button>
+    ))}
+  </div>
+  
+  {/* Desktop: Scroll horizontal */}
+  <div className="hidden sm:flex overflow-x-auto pb-4 scrollbar-hide">
+    <div className="flex space-x-3">
+      {categories.map(category => (
+        <button 
+          key={category} 
+          className={`px-4 py-2 rounded-full whitespace-nowrap transition-all duration-200 ${
+            activeCategory === category 
+              ? 'bg-primary text-white shadow-md' 
+              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+          }`} 
+          onClick={() => setActiveCategory(category)}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
       {filteredArticles.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredArticles.map(article => (
